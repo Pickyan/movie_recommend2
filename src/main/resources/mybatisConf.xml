@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!-- 关于mybatis的配置 -->
+
+<configuration>
+
+
+	<settings>
+		<!-- 开启sql文监控日志 -->
+		<setting name="logImpl" value="STDOUT_LOGGING" />
+		<!-- 开启二级缓存总开关 -->
+		<setting name="cacheEnabled" value="true" />
+	</settings>
+
+
+	<!-- 扫描要加载的类 给他起个别名或者直接使用 -->
+	<!-- 这个文件的位置必须在configuration之后 environments之前 -->
+	<typeAliases>
+		<package name="com.yzy.movie.entity" />
+	</typeAliases>
+
+
+
+	<!-- 把刚刚写好的userMapper.xml暴露在mybatis总映射中 -->
+	<mappers>
+		<!-- 要求两个文件 xml 接口文件 名字必须一样 -->
+		<package name="com.yzy.movie.dao" />
+	</mappers>
+
+
+</configuration>
