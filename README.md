@@ -7,7 +7,7 @@
 - 评分矩阵
 - 推荐电影展示
 ## 数据相关处理
-#### 原始电影数据样式
+#### 原始电影数据(数据量足够)样式
 ![原始电影数据样式](https://github.com/Pickyan/movie_recommend2/blob/master/src/main/webapp/images/aa.png?raw=true "原始电影数据样式")
 #### 目标电影数据样式
 ![目标电影数据样式](https://github.com/Pickyan/movie_recommend2/blob/master/src/main/webapp/images/bb.png?raw=true "目标电影数据样式")
